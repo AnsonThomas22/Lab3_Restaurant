@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dogs and Cats Restaurant</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <style>
+        body {
+            padding-top: 56px;
+            background-color: antiquewhite;
+        }
+        #map {
+            height: 400px;
+            width: 100%;
+            margin-bottom: 20px;
+        }
+        .contact-info ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .contact-info ul li {
+            margin-bottom: 10px;
+        }
+        .contact-info ul li i {
+            margin-right: 8px;
+        }
+        .modal-content {
+            border-radius: 10px;
+        }
+        aside {
+            background-color: #343a40;
+            color: white;
+            padding: 20px;
+            border-radius: 5px;
+        }
+        footer {
+            background-color: #343a40;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            margin-top: 20px;
+        }
+        .image{
+            margin:auto;
+            margin-right:10px;
+        }
+        li{ 
+            color: blue
+            background-color: black;
+
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">Cats & Dogs</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item ">
+                        <a class="nav-link" href="/Homepage.html">Home
+                            <span class="sr-only">(current)</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/page1.html">Menu</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Contact
+                            
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" data-toggle="modal" data-target="#signupModal">Sign Up</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Content -->
+    <div class="container mt-5">
+        <div class="row">
+            <!-- Main Content -->
+            <div class="col-lg-8">
+                <h1 class="mt-4">Welcome to Dogs and Cats Restaurant</h1>
+                <p>Delicious food for both pet lovers and their pets.</p>
+
+                <h2>Why Choose Us?</h2>
+                <p>At Dogs and Cats Restaurant, we offer a unique dining experience that caters to both you and your furry friends. Our menu is crafted to include delicious and healthy options for humans and pets alike. Enjoy a relaxing atmosphere, excellent service, and the joy of sharing a meal with your pets.</p>
+                
+                <!-- image-->
+                <div class="image">
+                    <img src="/img/image2.jpg" alt="Food 1"></img>
+                </div>
+            </div>
+
+            <!-- Aside Section -->
+            <aside class="col-lg-4 contact-info">
+                <h2 class="mt-4">Contact Us</h2>
+                <p>Stay connected with us:</p>
+                <ul>
+                    <br><br><li><i class="fab fa-whatsapp"></i> WhatsApp: <a href="https://wa.me/1234567890" class="text-white">1234567890</a></li><br><br>
+                    <li><i class="fab fa-facebook"></i> Facebook: <a href="https://facebook.com/dogsandcats" class="text-white">facebook.com/dogsandcats</a></li><br><br>
+                    <li><i class="fas fa-envelope"></i> Email: <a href="mailto:info@dogsandcats.com" class="text-white">info@dogsandcats.com</a></li><br><br>
+                </ul>
+            </aside>
+        </div>
+    </div>
+
+    <!-- Sign Up Modal -->
+    <div class="modal fade" id="signupModal" tabindex="-1" role="dialog" aria-labelledby="signupModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="signupModalLabel">Sign Up</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="signupUsername">Username</label>
+                            <input type="text" class="form-control" id="signupUsername" placeholder="Enter username">
+                        </div>
+                        <div class="form-group">
+                            <label for="signupEmail">Email address</label>
+                            <input type="email" class="form-control" id="signupEmail" placeholder="Enter email">
+                        </div>
+                        <div class="form-group">
+                            <label for="signupPassword">Password</label>
+                            <input type="password" class="form-control" id="signupPassword" placeholder="Password">
+                        </div>
+                        <button type="submit" class="btn btn-primary">Sign Up</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+    <iframe 
+        width="100%" 
+        height="400" 
+        src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d7777.317009907088!2d77.60707665907744!3d12.929656561206379!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1722700421153!5m2!1sen!2sin&markers=color:red%7Clabel:A%7C12.929656561206379,77.60707665907744" 
+        style="border: 1px solid black; margin-top: 20px;">
+    </iframe>
+    <br/>
+    <small>
+        <a href="https://maps.app.goo.gl/Jh8LSHfCUHtySb1t5">View Larger Map</a>
+    </small>
+</div>
+
+    
+    <footer>
+        <p class="foot"> &copy; 2024 Dogs and Cats Restaurant. All rights reserved </p> 
+    </footer>
+
+    
+</body>
+</html>
